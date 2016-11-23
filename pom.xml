@@ -196,7 +196,7 @@
 	     <artifactId>servlet-api-2.5</artifactId>
 	     <version>6.1.9</version>
 	     <scope>provided</scope>
-	   </dependency> 
+	   </dependency>
 		<dependency>  
             <groupId>javax.servlet</groupId>  
             <artifactId>jstl</artifactId>  
@@ -208,27 +208,34 @@
 			<version>1.9.13</version>
 		</dependency>
     </dependencies>
-    <repositories>
+	<repositories>
 		<repository>
-			<id>github-releases</id>
-			<url>http://oss.sonatype.org/content/repositories/github-releases/</url>
+			<id>nexus-aliyun</id>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
 		</repository>
-		<repository>
-			<id>maven-restlet</id>
-			<name>Public online Restlet repository</name>
-			<url>http://maven.restlet.org</url>
-		</repository>
-		<repository>
-			<id>ibiblio.org</id>
-			<name>ibiblio Mirror of http://repo1.maven.org/maven2/</name>
-			<url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
-		</repository>
-		<repository>
-			<id>jboss-public-repository-group</id>
-			<name>JBoss Public Repository Group</name>
-			<url>http://repository.jboss.org/nexus/content/groups/public</url>
-		</repository>
+
 	</repositories>
+    <!--<repositories>-->
+		<!--<repository>-->
+			<!--<id>github-releases</id>-->
+			<!--<url>http://oss.sonatype.org/content/repositories/github-releases/</url>-->
+		<!--</repository>-->
+		<!--<repository>-->
+			<!--<id>maven-restlet</id>-->
+			<!--<name>Public online Restlet repository</name>-->
+			<!--<url>http://maven.restlet.org</url>-->
+		<!--</repository>-->
+		<!--<repository>-->
+			<!--<id>ibiblio.org</id>-->
+			<!--<name>ibiblio Mirror of http://repo1.maven.org/maven2/</name>-->
+			<!--<url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>-->
+		<!--</repository>-->
+		<!--<repository>-->
+			<!--<id>jboss-public-repository-group</id>-->
+			<!--<name>JBoss Public Repository Group</name>-->
+			<!--<url>http://repository.jboss.org/nexus/content/groups/public</url>-->
+		<!--</repository>-->
+	<!--</repositories>-->
      <profiles>
 		<profile>
 			<id>dev</id>
@@ -253,9 +260,9 @@
 		</profile>
 	</profiles>
     
-  <properties>
-	<java.home>/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home</java.home>
-  </properties>
+  <!--<properties>-->
+	<!--<java.home>/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home</java.home>-->
+  <!--</properties>-->
   
     <build>
     <resources>
